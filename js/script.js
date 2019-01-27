@@ -1,0 +1,22 @@
+console.log('script.js загружен');
+var menu = document.getElementById("menu");
+var lines = document.getElementById("lines");
+var content = document.getElementById("contentShadow");
+var nav = false;
+var color;
+goNav = function(){
+  if (nav==false){
+    menu.style.left="0px";
+    content.style.zIndex= "60";
+    console.log(lines.style.borderBottom);
+    lines.style.borderBottom="17px double #F8F8F8";
+    lines.style.borderTop="6px solid #F8F8F8";
+  }else{
+    menu.style.left="-250px";
+    content.style.zIndex= "-250";
+    lines.style.borderBottom="17px double black";
+    lines.style.borderTop="6px solid black";
+  }
+
+  nav = !nav;
+}

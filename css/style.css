@@ -1,0 +1,140 @@
+body { margin: 0; }
+
+#menu{
+background: #F8F8F8;
+position: fixed;
+top: 0px;
+width: 250px;
+height: 100%;
+z-index: 100;
+margin: 0;
+    transition: 0.2s;
+}
+#contentShadow{
+background: #000000;
+position:fixed;
+top: 0px;
+left:0px;
+width: 100%;
+height: 100%;
+z-index: -150;
+transition: 0.1s;
+opacity:0.8;
+}
+
+#content{
+background: #E3D3EA;
+position:absolute;
+top: 0px;
+z-index: 50;
+    transition: 0.2s;
+}
+
+#lines{
+    border-bottom: 17px double black;
+    border-top: 6px solid black;
+    content:"";
+    height: 5px;
+    width:30px;
+    z-index: 150;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
+
+#lines a{
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -8px;
+}
+
+
+@media (min-width: 700px){
+  #menu{  left: 0px;  }
+  #content{  left: 250px;  }
+  #lines{  z-index: -150;  }
+  #contentShadow{ z-index: -250;  }
+}
+@media (max-width: 699px){
+  #menu{  left: -250px; }
+  #content{  left: 0px;  }
+  #lines{  z-index: 150;  }
+  #contentShadow{ z-index: -250;  }
+}
+
+
+
+
+#logo{
+background-image: url('../img/mai.gif');
+background-repeat: no-repeat;
+margin: 5% 20%;
+background-size:100%;
+position:static;
+white: 100%;
+padding-top: 50%;
+padding-bottom: 10%;
+}
+#list{
+margin: 0;
+align-items: center;
+font-family: "12517";
+}
+#list .il {
+  list-style:none;
+  text-align:center;
+
+}
+#list .il {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size:18px;
+   }
+#list a{
+    color: black;
+    text-decoration: none;
+    transition: 0.2s;
+}
+#developer {
+  position: absolute;
+  top:92%;
+  color: black;
+  font-family: "12517";
+  font-size: 13px;
+  width: 100%;
+}
+
+#developer p{
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+#developer a{
+  color: black;
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+#developer a:hover{
+  transition: 0.2s;
+  color: #777777;
+}
+
+
+#list a:hover{
+      transition: 0.2s;
+      color: #777777;
+}
+
+
+
+
+@font-face {
+font-family: "12517";
+src: url("../fonts/12517.otf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
