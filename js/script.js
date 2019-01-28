@@ -9,7 +9,7 @@ var color;
 window.onload = function(){
   var link = document.querySelector('link[rel=import]');
       var contentPaste = link.import.querySelector('#paste');
-      document.body.appendChild(contentPaste.cloneNode(true));
+      document.cont.appendChild(contentPaste.cloneNode(true));
 }
 
 
