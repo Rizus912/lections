@@ -18,7 +18,7 @@ window.onload=function(){
   var page = document.getElementsByClassName('page');
   for (i=0;i<page.length;i++) { page[i].style.display="none";}
   document.getElementById('b').style.display="block";
-
+  document.getElementById('bMainLogo').style.opacity="1";
   baloon.style.bottom="15%";
   airship.style.top="4%";
   airship.style.left= "-280px";
