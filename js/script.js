@@ -22,7 +22,7 @@ window.onload=function(){
   baloon.style.bottom="15%";
   airship.style.top="4%";
   airship.style.left= "-280px";
-  plane.style.right= "2%";
+  if(screen.width>700){plane.style.right= "2%";}
 
 
 }
